@@ -19,7 +19,7 @@ document.querySelector('.check').addEventListener('click', function () {
     displayMessage('Correct Number');
     document.querySelector('.number').textContent = secretNumber;
     document.querySelector('body').style.backgroundColor = '#99383e';
-    document.querySelector('.number').style.width = '30rem';
+    document.querySelector('.number').style.width = '40rem';
   } else if (guess !== secretNumber) {
     if (score > 1) {
       displayMessage(guess > secretNumber ? 'Too High !!' : 'Too Low');
@@ -39,7 +39,7 @@ document.querySelector('.again').addEventListener('click', function () {
 
   document.querySelector('.guess').value = '';
   document.querySelector('.number').textContent = '?';
-  displayMessage('start guessing...')
+  displayMessage('start guessing...');
   document.querySelector('.score').textContent = score;
 
   document.querySelector('.number').style.width = '15rem';
